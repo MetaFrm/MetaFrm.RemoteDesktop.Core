@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>MetaFrm</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MetaFrm</RootNamespace>
     <AssemblyName>MetaFrm.RemoteDesktop.Core</AssemblyName>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -16,12 +16,12 @@
     <RepositoryUrl>https://github.com/MetaFrm/MetaFrm.RemoteDesktop.Core</RepositoryUrl>
     <PackageTags>meta;framework;dotnet;maui;</PackageTags>
     <SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ss:fffZ"))</SourceRevisionId>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
     <Title>Meta Framework RemoteDesktop Core</Title>
+    <Product>Meta Framework RemoteDesktop Core</Product>
     <Description>Meta Framework
 (Multi platform &amp; Meta management)</Description>
-    <Product>Meta Framework RemoteDesktop Core</Product>
     <PackageIcon>icon.png</PackageIcon>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
