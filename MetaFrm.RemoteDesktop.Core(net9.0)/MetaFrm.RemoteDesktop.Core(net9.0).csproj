@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>MetaFrm</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>MetaFrm.RemoteDesktop.Core</AssemblyName>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>MetaFrm.RemoteDesktop.Core.net9.0</PackageId>
+    <Version>9.0.4.1</Version>
+    <Authors>dsun</Authors>
+    <Company>Meta Framework</Company>
+    <Copyright>Copyright 2025. dsun all rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/MetaFrm/MetaFrm.RemoteDesktop.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MetaFrm/MetaFrm.RemoteDesktop.Core</RepositoryUrl>
+    <PackageTags>meta;framework;dotnet;maui;</PackageTags>
+    <SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ss:fffZ"))</SourceRevisionId>
+    <Title>Meta Framework RemoteDesktop Core</Title>
+    <Description>Meta Framework
+(Multi platform &amp; Meta management)</Description>
+    <Product>Meta Framework RemoteDesktop Core</Product>
+    <PackageIcon>icon.png</PackageIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\src\ColorDepth.cs" Link="ColorDepth.cs" />
+    <Compile Include="..\src\Models\Server.cs" Link="Models\Server.cs" />
+    <Compile Include="..\src\Models\ServerExtend.cs" Link="Models\ServerExtend.cs" />
+    <Compile Include="..\src\Models\ServerTmp.cs" Link="Models\ServerTmp.cs" />
+    <Compile Include="..\src\SharedStatus.cs" Link="SharedStatus.cs" />
+    <Compile Include="..\src\VirtualKey.cs" Link="VirtualKey.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MetaFrm.Core.net9.0" Version="9.0.4.57" />
+    <PackageReference Include="MetaFrm.Razor.Essentials.net9.0" Version="9.0.4.57" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
