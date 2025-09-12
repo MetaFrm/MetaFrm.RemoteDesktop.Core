@@ -18,33 +18,6 @@ namespace MetaFrm.RemoteDesktop.Core
         public void SetFirstLoadFalse() => IsFirstLoad = false;
 
         /// <summary>
-        /// TopControlOrgLocation
-        /// </summary>
-        public Point TopControlOrgLocation { get; set; } = new(0, 0);
-        /// <summary>
-        /// TopControlOrgSize
-        /// </summary>
-        public Size TopControlOrgSize { get; set; } = new(447, 52);
-        /// <summary>
-        /// TopControlOrgDockStyle
-        /// </summary>
-        public int TopControlOrgDockStyle { get; set; } = 1;//DockStyle.Top;
-
-
-        /// <summary>
-        /// BottomControlOrgLocation
-        /// </summary>
-        public Point BottomControlOrgLocation { get; set; }
-        /// <summary>
-        /// BottomControlOrgSize
-        /// </summary>
-        public Size BottomControlOrgSize { get; set; }
-        /// <summary>
-        /// BottomControlOrgDockStyle
-        /// </summary>
-        public int BottomControlOrgDockStyle { get; set; }
-
-        /// <summary>
         /// IsTab
         /// </summary>
         public bool IsTab { get; set; }
