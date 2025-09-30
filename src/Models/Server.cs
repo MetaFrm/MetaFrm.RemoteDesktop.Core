@@ -121,7 +121,10 @@ namespace MetaFrm.RemoteDesktop.Core.Models
         {
             get
             {
-                return $"{this.DesktopWidthDic}x{this.DesktopHeightDic}";
+                if (this.DESKTOP_WIDTH == 0 && this.DESKTOP_HEIGHT == 0)
+                    return $"Current View";
+                else
+                    return $"{this.DesktopWidthDic}x{this.DesktopHeightDic}";
             }
             set
             {
@@ -131,10 +134,15 @@ namespace MetaFrm.RemoteDesktop.Core.Models
 
                     this.DesktopWidthDic = tmps[0].ToInt();
                     this.DesktopHeightDic = tmps[1].ToInt();
-
-                    this.DESKTOP_WIDTH = this.DesktopWidthDic;
-                    this.DESKTOP_HEIGHT = this.DesktopHeightDic;
                 }
+                else
+                {
+                    this.DesktopWidthDic = 0;
+                    this.DesktopHeightDic = 0;
+                }
+
+                this.DESKTOP_WIDTH = this.DesktopWidthDic;
+                this.DESKTOP_HEIGHT = this.DesktopHeightDic;
             }
         }
 
