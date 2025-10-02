@@ -77,6 +77,10 @@ namespace MetaFrm.RemoteDesktop.Core
         /// FormOrgSize
         /// </summary>
         public Size FormOrgSize { get; set; }
+        /// <summary>
+        /// FormOrgBounds
+        /// </summary>
+        public Rectangle FormOrgBounds { get; set; }
 
         /// <summary>
         /// Visible_SERVER
@@ -86,5 +90,11 @@ namespace MetaFrm.RemoteDesktop.Core
         /// Visible_USER_NAME
         /// </summary>
         public bool Visible_USER_NAME { get; set; } = true;
+
+
+        /// <summary>
+        /// IsDesktopControlSync
+        /// </summary>
+        public bool IsDesktopControlSync { get; set; } = false;
     }
 }

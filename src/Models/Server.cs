@@ -160,7 +160,7 @@ namespace MetaFrm.RemoteDesktop.Core.Models
             {
                 this._DESKTOP_WIDTH = value;
 
-                if (this.IsDesktopControlSync)
+                if (this.IsDesktopControlSync && this._DESKTOP_WIDTH != 0)
                     this.CONTROL_WIDTH = this._DESKTOP_WIDTH;
             }
         }
@@ -180,7 +180,7 @@ namespace MetaFrm.RemoteDesktop.Core.Models
             {
                 this._DESKTOP_HEIGHT = value;
 
-                if (this.IsDesktopControlSync)
+                if (this.IsDesktopControlSync && this._DESKTOP_HEIGHT != 0)
                     this.CONTROL_HEIGHT = this._DESKTOP_HEIGHT;
             }
         }
