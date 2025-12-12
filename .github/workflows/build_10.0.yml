@@ -40,7 +40,6 @@ jobs:
       run: dotnet workload install maui --ignore-failed-sources
       
     - name: mkdir temp (Windows)
-      if: runner.os == 'Windows'
       run: mkdir -p temp
 
 
