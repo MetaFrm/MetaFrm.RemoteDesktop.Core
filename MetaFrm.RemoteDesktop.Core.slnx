@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path=".github/workflows/build_10.0.yml" />
+  </Folder>
+  <Folder Name="/src/">
+    <File Path="src/ColorDepth.cs" />
+    <File Path="src/SharedStatus.cs" />
+    <File Path="src/VirtualKey.cs" />
+  </Folder>
+  <Folder Name="/src/Models/">
+    <File Path="src/Models/Server.cs" />
+    <File Path="src/Models/ServerExtend.cs" />
+    <File Path="src/Models/ServerTmp.cs" />
+  </Folder>
+  <Folder Name="/솔루션 항목/">
+    <File Path=".gitignore" />
+    <File Path="LICENSE.txt" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="net10/MetaFrm.RemoteDesktop.Core(net10.0).csproj" />
+</Solution>
